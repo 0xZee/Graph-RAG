@@ -13,7 +13,7 @@ mkdir -p input`
 ```
 > Populate  `input` Directory with documents to RAG
 ```
-Input File : Financie_Fundamental_Analysis.txt
+Input File : Financial_Fundamental_Analysis.txt
 ```
 
 > initialize workspace, run the graphrag.index --init command in . root folder
