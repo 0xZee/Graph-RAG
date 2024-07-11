@@ -4,6 +4,11 @@
 
 is a modular graph-based Retrieval-Augmented Generation (RAG) system designed to extract meaningful, structured data from unstructured text using the power of large language models (LLMs). It enhances LLMs’ ability to reason about private data by leveraging knowledge graph memory structures. The system is part of a data pipeline and transformation suite that aims to improve the accuracy and relevance of generated text.
 
+## 🕸 WorkFlow of LLM-generated knowledge graphs
+- The LLM processes the entire private dataset, creating references to all entities and relationships within the source data, which are then used to create an LLM-generated knowledge graph. 
+- This graph is then used to create a bottom-up clustering that organizes the data hierarchically into semantic clusters (indicated by using color in Figure 3 below). This partitioning allows for pre-summarization of semantic concepts and themes, which aids in holistic understanding of the dataset. 
+- At query time, both of these structures are used to provide materials for the LLM context window when answering a question. 
+
 > Notebook : Graph_RAG.ipynb
 
 ## 🛠️ How to use :
