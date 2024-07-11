@@ -4,6 +4,8 @@
 
 is a modular graph-based Retrieval-Augmented Generation (RAG) system designed to extract meaningful, structured data from unstructured text using the power of large language models (LLMs). It enhances LLMs’ ability to reason about private data by leveraging knowledge graph memory structures. The system is part of a data pipeline and transformation suite that aims to improve the accuracy and relevance of generated text.
 
+> Notebook : Graph_RAG.ipynb
+
 ## 🛠️ How to use :
 
 > Install and Input Directory :
