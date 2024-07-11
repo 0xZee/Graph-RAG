@@ -11,6 +11,10 @@ is a modular graph-based Retrieval-Augmented Generation (RAG) system designed to
 pip install graphrag
 mkdir -p input`
 ```
+> Populate  `input` Directory with documents to RAG
+```
+Input File : Financie_Fundamental_Analysis.txt
+```
 
 > initialize workspace, run the graphrag.index --init command in . root folder
 
@@ -41,6 +45,8 @@ python -m graphrag.query \
 ---
 
 ## 📰 Key Features of GraphRAG:
+
+### 🌐  https://microsoft.github.io/graphrag/posts/get_started/
 
 ### Knowledge Graph Creation:
 GraphRAG uses LLMs to create a knowledge graph from an input corpus. This graph represents the relationships and entities within the data, providing a structured way to understand complex information12.
