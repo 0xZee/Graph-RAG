@@ -14,25 +14,25 @@ is a modular graph-based Retrieval-Augmented Generation (RAG) system designed to
 ## 🛠️ How to use :
 
 > Install and Input Directory :
-```
+```python
 pip install graphrag
 mkdir -p input`
 ```
 > Populate  `input` Directory with documents to RAG
-```
+```python
 Input File : Financial_Fundamental_Analysis.txt
 ```
 
 > initialize workspace, run the graphrag.index --init command in . root folder
 
-```
+```python
 python -m graphrag.index --init --root .
 ```
 
 > Running the Query Engine - `Global Search`
 **Global search to ask a high-level question or holostic question**
 
-```
+```python
 python -m graphrag.query \
 --root . \
 --method global \
@@ -42,7 +42,7 @@ python -m graphrag.query \
 > Running the Query Engine - `Local Search`
 **Local search to ask a more specific question about a particular character**
 
-```
+```python
 python -m graphrag.query \
 --root ./ragtest \
 --method local \
