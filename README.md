@@ -1,10 +1,46 @@
-# Microsoft Graph-RAG Indexing and Quering
+# 🌐 Microsoft Graph-RAG Indexing and Quering
 
-## GraphRAG 
+## 🕸 GraphRAG 
 
 is a modular graph-based Retrieval-Augmented Generation (RAG) system designed to extract meaningful, structured data from unstructured text using the power of large language models (LLMs). It enhances LLMs’ ability to reason about private data by leveraging knowledge graph memory structures. The system is part of a data pipeline and transformation suite that aims to improve the accuracy and relevance of generated text.
 
-## Key Features of GraphRAG:
+## 🛠️ How to use :
+
+> Install and Input Directory :
+```
+pip install graphrag
+mkdir -p input`
+```
+
+> initialize workspace, run the graphrag.index --init command in . root folder
+
+```
+python -m graphrag.index --init --root .
+```
+
+> Running the Query Engine - `Global Search`
+**Global search to ask a high-level question or holostic question**
+
+```
+python -m graphrag.query \
+--root . \
+--method global \
+"What are the top themes in this story?"
+```
+
+> Running the Query Engine - `Local Search`
+**Local search to ask a more specific question about a particular character**
+
+```
+python -m graphrag.query \
+--root ./ragtest \
+--method local \
+"Who is Scrooge, and what are his main relationships?"
+```
+
+---
+
+## 📰 Key Features of GraphRAG:
 
 ### Knowledge Graph Creation:
 GraphRAG uses LLMs to create a knowledge graph from an input corpus. This graph represents the relationships and entities within the data, providing a structured way to understand complex information12.
